@@ -30,5 +30,20 @@
 
     //null gives a 0 value
     alert(Number(null));
+
+    //1 is true, 0 is false
+    alert(Boolean(1));
+    alert(Boolean(0));
+
+    //values that are empty, like 0 (the number), an empty string, null, undefined, and NaN has a false value
+    //other values have a true value
+    alert(Boolean("hi")); //true
+    alert(Boolean("")); //false
+
+    //NOTE: a string 0 aka "0" has a true value. In JavaScript a non-empty string is always true
+    alert(Boolean("0"));
+
+    //a string containing empty spaces also has a true value, since the string contains spaces and it is not empty
+    alert(Boolean(" "));
 </script>
 
