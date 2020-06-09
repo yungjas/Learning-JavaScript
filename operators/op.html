@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script>
+    //the addition operator has 2 forms: binary and unary
+
+    //binary + is for concatenating strings together
+    //if number and string are added together, then the number becomes a string
+    alert(2 + "1");
+
+    //other operators work with only numbers and they always convert any strings to numbers
+    alert(6 - "2"); //result is 4
+    alert("6" / 3) //result is 2
+
+    //the unary form of + converts variables to numbers if they are not numbers
+    //it is the shorter form of the Number function 
+    let x = 5;
+    alert(+x); //no effect since x is already a number
+    let y = true;
+    alert(+y); //result is 1
+    alert(+""); //result is 0
+</script>
