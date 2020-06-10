@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+    //task 1: rewrite if statement into ?
+    let a = 1;
+    let b = 5;
+    //syntax of using ? to replace if statement
+    //let variable = condition ? value1 : value2
+    let result = (a+b < 4) ? "below" : "over";
+    alert(result);
+
+    //task 2: rewrite if else statement into ?
+    let login = ""
+    let message = (login == "Employee") ? "Hello" : //if login is Employee, the message will be Hello
+        (login == "Director") ? "Greetings" : //if login is Director, the message will be Greetings
+        (login == "") ? "No login" : 
+        //the last one catches other inputs that are not Employee, Director or an empty string
+        "";
+    alert(message);
+</script>
