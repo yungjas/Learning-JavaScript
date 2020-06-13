@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+    //the nullish coalescing operator ?? provides a short syntax for selecting a FIRST "defined" variable from the list
+    //in short, ?? returns the FIRST defined value
+
+    //eg: a ?? b
+    //the above result will be a if it's not null or undefined, b otherwise
+
+    //the below code will show either the firstName, lastName, nickName, or the default string "Anonynous" if none of the variables are set
+    let firstName = null;
+    let lastName = null;
+    let nickName = "Jamie";
+    alert(firstName ?? lastName ?? nickName ?? "Anonymous"); //will display the value of nickName
+
+    let height = 0;
+    alert(height ?? 100); //result will be 0 because 100 is only returned if height is either null or undefined. Since height is currently equals to 0, hence 0 will be returned
+</script>
