@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+    //outer variable represents the outer loop
+    //this is useful when given a condition, we want to break out of both loops
+    outer: for(let i = 0; i < 3; i++){
+        for(let j = 0; j < 3; j++){
+            let input = prompt(`Value at coords (${i}, ${j})`, "");
+
+            //if input is an empty string or cancelled, then break out of both loops
+            if(input == "" || input == null){
+                break outer;
+            }
+        }
+    }
+
+    alert("Done");
+</script>
